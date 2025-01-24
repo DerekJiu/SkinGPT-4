@@ -50,7 +50,7 @@ def get_skintones(inference_df: DataFrame) -> list[int]:
     Returns:
         list[int]: List of Fitzpatrick skin tone values rounded to integers
     """
-    fitz_values = inference_df["fitz"].round().astype(int).tolist()
+    fitz_values = inference_df["fitz"].tolist()
 
     # Replace any value of 6 with 5
     fitz_values = [5 if value == 6 else value for value in fitz_values]
