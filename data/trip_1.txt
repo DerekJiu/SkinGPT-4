@@ -1,0 +1,2 @@
+Average parity: 0.8579756
+Largest parity difference: 0.13357799999999997
